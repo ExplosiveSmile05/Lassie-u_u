@@ -1,0 +1,33 @@
+body {
+  background-color: #e99989;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  min-height: 100vh;
+  margin: 0;
+}
+
+.texto {
+  font-size: 150px;
+  background: linear-gradient(135deg, #C27BA0, #4A148C, #C27BA0);
+  background-size: 400% 400%;
+  background-clip: text;
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  color: transparent;
+  animation: gradientmove 5s ease infinite;
+}
+
+@keyframes gradientmove {
+  0% {
+    background-position: 0% 50%;
+  }
+
+  50% {
+    background-position: 100% 50%;
+  }
+
+  100% {
+    background-position: 0% 50%;
+  }
+}
