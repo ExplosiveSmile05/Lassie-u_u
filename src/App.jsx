@@ -1,6 +1,8 @@
 import { useState } from 'react'
 import reactLogo from './assets/react.svg'
 import viteLogo from '/vite.svg'
+import foto1 from "./assets/Yo y Lassie.png"
+import foto2 from "./assets/mayonesaenlosojos.jpg"
 import Component from './components/Component.jsx'
 import './App.css'
 
@@ -15,11 +17,11 @@ function App() {
         <Component />
       </div>
       <div style={{ marginBottom: '50px' }}>
-        <img src="/src/assets/Yo y lassie.png" alt="Yo y Lassie" />
+        <img src={foto1}/>
       </div>
       <div>
         <h2 className='texto texto--sm'>Yo si dices que no</h2>
-        <img src="/src/assets/mayonesaenlosojos.jpg" alt="Yo y Lassie" />
+        <img src={foto2} alt="Yo y Lassie" />
       </div>
     </div>
   )
